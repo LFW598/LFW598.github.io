@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lucas Webster</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucas Webster</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #1f2937; /* dark gray */
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .main {
+      flex-grow: 1;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .text-content {
+      max-width: 50%;
+    }
+
+    .text-content h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    .text-content p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    .photo {
+      max-width: 40%;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is my personal homepage.</p>
+
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#">CV</a>
+    <a href="#">Projects</a>
+    <a href="#">Miscellaneous</a>
+  </div>
+
+  <div class="main">
+    <div class="text-content">
+      <h1>Lucas Webster</h1>
+      <p>I'm a student, data enthusiast, and lifelong learner. Welcome to my personal site.</p>
+    </div>
+    <div class="photo">
+      <img src="mainphoto.JPG" alt="Photo of Lucas Webster">
+    </div>
+  </div>
+
 </body>
 </html>
