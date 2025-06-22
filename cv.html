@@ -51,17 +51,6 @@
       flex-direction: column; /* added this for mobile by myself */
     }
 
-    .content {
-      padding: 20px;
-      height: 100vh;    /* full viewport height on mobile */
-      overflow-y: auto; /* enable vertical scrolling */
-    }
-    
-    .pdf-viewer {
-      height: 100%;     /* fill the content area */
-      overflow-y: auto;
-    }
-
     .sidebar {
       display: flex;
       flex-direction: row;
@@ -80,7 +69,22 @@
       padding: 10px 0;
       font-size: 1em;
     }
+    
+    .content {
+    padding: 20px;
+    margin-top: 10px; /* space below the topbar */
+    flex: 1;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjust based on topbar height */
   }
+
+  .pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
 
         </style>
     </head>
