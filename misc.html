@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Misc - Lucas Webster</title>
         <style>
-            body {
-                display: flex;
-                font-family: Arial, sans-serif;
+            html, body {
+                height: 100%;
                 margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
             }
+
+            body {
+            display: flex;
+            overflow: hidden; /* prevents full-page scroll, content will scroll instead */
+            }
+            
             .sidebar {
                 position: fixed;
                 top: 0;
@@ -40,6 +47,7 @@
                 background-color: #f4f4f4;
                 min-height: 100vh;
                 box-sizing: border-box;
+                overflow-y: auto;
             }
 
             h1 {
@@ -95,6 +103,36 @@
                 border-radius: 8px;
                 box-shadow: 0 0 8px rgba(0,0,0,0.1);
                 }
+            
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-around;
+                padding: 10px 0;
+                position: relative;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .list-section,
+            .image-section {
+                max-width: 100%;
+            }
+            }
 
         </style>
     </head>
@@ -130,7 +168,7 @@
                 </p>
               </li>
               <li><a href="https://dailynexus.com/2023-03-09/from-sinzenich-to-santa-barbara-leroy-zellers-international-student-athlete-journey/" target="_blank" rel="noopener noreferrer">Daily Nexus Article</a>
-                <p class="subdescription">An article I wrote about the UCSB men's soccer goalkeeper my frehsman year as a data
+                <p class="subdescription">An article I wrote about the UCSB men's soccer goalkeeper my freshman year as a data
                     visualization exercise. Oddly enough, he requested it in pdf form to aid in his application for a work Visa or something
                     of the sort (he's German).
                 </p>

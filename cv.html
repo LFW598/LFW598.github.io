@@ -43,6 +43,17 @@
       height: 90vh;
       border: 1px solid #ccc;
     }
+
+  @media (max-width: 768px) {
+    .content {
+      padding: 20px;
+      height: 100vh;    /* full viewport height on mobile */
+      overflow-y: auto; /* enable vertical scrolling */
+      }
+    .pdf-viewer {
+      height: 100%;     /* fill the content area */
+      }
+  }
         </style>
     </head>
     <body>
