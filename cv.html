@@ -54,29 +54,37 @@
       padding: 20px;
       height: 100vh;    /* full viewport height on mobile */
       overflow-y: auto; /* enable vertical scrolling */
-      }
+    }
+    
     .pdf-viewer {
       height: 100%;     /* fill the content area */
-      }
+      overflow-y: auto;
+    }
 
     .sidebar {
-      flex-direction: row; /* added this for mobile by myself */
+      display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      width: 100%;
       padding: 10px 0;
     }
 
-    .sidebar a { /* added this for mobile by myself */
+    .sidebar h2 {
+      margin: 0;
+    }
+
+    .sidebar a {
       margin: 0 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding: 10px 0;
+      font-size: 1em;
     }
   }
 
         </style>
     </head>
+    
     <body>
-
         <div class="sidebar">
             <h2><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></h2>
             <a href="cv.html">CV</a>
