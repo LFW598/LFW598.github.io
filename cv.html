@@ -45,6 +45,11 @@
     }
 
   @media (max-width: 768px) {
+
+    .body {
+      flex-direction: column; /* added this for mobile by myself */
+    }
+
     .content {
       padding: 20px;
       height: 100vh;    /* full viewport height on mobile */
@@ -53,7 +58,21 @@
     .pdf-viewer {
       height: 100%;     /* fill the content area */
       }
+
+    .sidebar {
+      flex-direction: row; /* added this for mobile by myself */
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .sidebar a { /* added this for mobile by myself */
+      margin: 0 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
+
         </style>
     </head>
     <body>
