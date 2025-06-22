@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Misc - Lucas Webster</title>
+        <style>
+            body {
+                display: flex;
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 140px;
+                background-color: #1f2937;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            .sidebar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .sidebar a:hover {
+                text-decoration: underline;
+            }
+
+            .content {
+                margin-left: 140px;
+                padding: 40px;
+                background-color: #f4f4f4;
+                min-height: 100vh;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                margin-top: 0;
+                }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                }
+
+            li {
+                margin-bottom: 10px;
+                }
+
+            a.download-link {
+                color: #1f2937;
+                text-decoration: none;
+                font-weight: bold;
+                }
+
+            a.download-link:hover {
+                text-decoration: underline;
+                }
+
+            .subdescription {
+                margin: 4px 0 15px 20px;
+                font-size: 0.9em;
+                color: #555;
+                max-width: 600px;
+                }
+
+            .flex-container {
+                display: flex;
+                gap: 40px; 
+                align-items: flex-start;
+                }
+
+            .list-section {
+                flex: 1;          
+                max-width: 600px; 
+                }
+
+            .image-section {
+                flex: 1;           
+                display: flex;
+                flex-direction: column;
+                gap: 20px;         
+                }
+
+            .image-section img {
+                max-width: 100%;    
+                border-radius: 8px;
+                box-shadow: 0 0 8px rgba(0,0,0,0.1);
+                }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "sidebar">
+            <h2><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></h2>
+            <a href="cv.html">CV</a>
+            <a href="#">Projects</a>
+            <a href="misc.html">Miscellaneous</a>
+        </div>
+
+        <div class = "content">
+            <h1>Miscellaneous Works</h1>
+            <div class="flex-container">
+            <div class="list-section">
+            <ul>
+              <li><a class="download-link" href="age_ai_agent.pdf" download>The Age of the AI Agent (June 2025)</a>
+                <p class="subdescription">An essay responding to and extending Brian Rotman's book 'Becoming Beside Ourselves.'
+                Investigates the validoty of the computer in mathematics, and its role as a physical copy
+                of the mathematical agent and its connection to AI.
+            </p>
+              </li>
+              <li><a class="download-link" href="the_implications_of_ghost_turing_machine.pdf" download>The Implications of the Holy Ghost in Turing's Machine (May 2025)</a>
+                <p class="subdescription">Another essay responding to a book by Brian Rotman, this time 'Ad Infinitum.'
+                    Explores the assumption of infinity in mathematics, and this assumptions trickle down effects on science and mathematics
+                    social relation to other fields in academia.
+                </p>
+              </li>
+              <li><a href="https://www.instagram.com/sacfcim/" target="_blank" rel="noopener noreferrer">Sac FC Instagram</a>
+                <p class="subdescription">An Instagram page dedicated to following the intramural soccer team I started at UCSB.
+                    The captions provided a weekly comedic writing exercize if nothing else. No longer managed by me as of June 2025.
+                </p>
+              </li>
+              <li><a href="https://dailynexus.com/2023-03-09/from-sinzenich-to-santa-barbara-leroy-zellers-international-student-athlete-journey/" target="_blank" rel="noopener noreferrer">Daily Nexus Article</a>
+                <p class="subdescription">An article I wrote about the UCSB men's soccer goalkeeper my frehsman year as a data
+                    visualization exercise. Oddly enough, he requested it in pdf form to aid in his application for a work Visa or something
+                    of the sort (he's German).
+                </p>
+              </li>
+            </ul>
+            </div>
+            <div class="image-section">
+                <img src="sacfc_retire.jpeg" alt="Sac FC Retirement"/>
+            </div>
+            </div>
+        </div>
+    </body>
+    </html>
