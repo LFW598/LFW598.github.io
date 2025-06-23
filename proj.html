@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Misc - Lucas Webster</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            body {
+            display: flex;
+            overflow: hidden; /* prevents full-page scroll, content will scroll instead */
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 140px;
+                background-color: #1f2937;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            .sidebar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .sidebar a:hover {
+                text-decoration: underline;
+            }
+
+            .content {
+                margin-left: 140px;
+                padding: 40px;
+                background-color: #f4f4f4;
+                min-height: 100vh;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+
+            h1 {
+                margin-top: 0;
+                }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                }
+
+            li {
+                margin-bottom: 10px;
+                }
+
+            a.download-link {
+                color: #1f2937;
+                text-decoration: none;
+                font-weight: bold;
+                }
+
+            a.download-link:hover {
+                text-decoration: underline;
+                }
+
+            .subdescription {
+                margin: 4px 0 15px 20px;
+                font-size: 0.9em;
+                color: #555;
+                max-width: 600px;
+                }
+
+            .flex-container {
+                display: flex;
+                gap: 40px; 
+                align-items: flex-start;
+                }
+
+            .list-section {
+                flex: 1;          
+                max-width: 600px; 
+                }
+
+            .image-section {
+                flex: 1;           
+                display: flex;
+                flex-direction: column;
+                gap: 20px;         
+                }
+
+            .image-section img {
+                max-width: 100%;    
+                border-radius: 8px;
+                box-shadow: 0 0 8px rgba(0,0,0,0.1);
+                }
+            
+        @media (max-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                /*position: relative;*/
+            }
+
+            .sidebar h2 {
+                margin: 0;
+            }
+
+            .sidebar a {
+                margin: 0 10px;
+                padding: 10px 0;
+                font-size: 1em;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 20px;
+                min-height: auto;
+                height: auto;
+                padding-top: 100px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .list-section,
+            .image-section {
+                max-width: 100%;
+            }
+        }
+
+        .image-section figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .image-section figcaption {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "sidebar">
+            <h2><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></h2>
+            <a href="cv.html">CV</a>
+            <a href="proj.html">Projects</a>
+            <a href="misc.html">Miscellaneous</a>
+        </div>
+
+        <div class = "content">
+            <h1>Projects</h1>
+            <div class="flex-container">
+            <div class="list-section">
+            <ul>
+              <li><a class="download-link" href="#" download>Statistics Education (Jan-June 2025)</a>
+                <p class="subdescription"> Analyzed survey data and text data on 
+                    UCSB PSTAT courses 10 and 120B under the instruction and project supervision of Dr. Uma Ravat. Data included but 
+                    was not limited to post lecture free responses, demographics, tech experience, and course skill improvement. Used
+                    text analysis and linear regression, all done in R, and data and project are unavailable due to privacy restrictions.
+            </p>
+              </li>
+              <li><a href="https://github.com/isi-buds/Project6-2024" target="_blank" rel="noopener noreferrer">ISI BUDS mHealth Symposium (June-Aug 2024)</a>
+                <p class="subdescription">Under the guidance of Dr. Babak Shahbaba of UCI, my ISI-BUDS final project which analyzed mHealth data from the ALLofUS dataset. Looked at disparities in cardiovascular
+                    diseases amongst minorities and women. Imputed data with kNN and MICE, as well as used FDA visualizations
+                    and linear and logistic regression models. Used R.
+                </p>
+              </li>
+              <li><a href="https://github.com/LFW598/Wikipedia-SNA" target="_blank" rel="noopener noreferrer">Wikipedia SNA</a>
+                <p class="subdescription">In my final project for a computational statistics course, two partners and myself practiced social network analysis on SNAP Wikipedia
+                    articles about animals. We measured their connections to the rest of Wikipedia, each other, and measures of site popularity.
+                    Used R and iGraph. 
+                </p>
+              </li>
+              <li><a href="https://github.com/LFW598/RNG" target="_blank" rel="noopener noreferrer">Random Number Generation</a>
+                <p class="subdescription">In an independent midterm project for the same computational statistics course, I practiced inversion sampling, rejection sampling, and transformation sampling on univariate distributions.
+                    Used R.
+                </p>
+              </li>
+            </ul>
+            </div>
+            <div class="image-section">
+                <figure>
+                    <img src="./images/isi_group6.jpeg" alt="ISI-BUDS Group 6 2025"/>
+                    <figcaption>Group 6 at the 2024 ISI-BUDS Symposium at UCI</figcaption>
+                </figure>
+            </div>
+            </div>
+        </div>
+    </body>
+    </html>
